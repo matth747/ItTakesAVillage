@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { User } = require('../../models');
 const {foundEmail} = require('../../utils/newRegSendGrid');
 
-router.post('/singUp', async (req,res) => {
+router.post('/signUp', async (req,res) => {
     try {
         console.log(req.body)
         const userData = await User.create({
