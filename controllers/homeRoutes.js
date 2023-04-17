@@ -88,9 +88,9 @@ router.get("/requests/makeReq", withAuth, async (req, res) => {
   }
 })
 
-router.get('/signUp', async (req, res) => {
+router.get('/signUserUp', async (req, res) => {
   try {
-    res.render('signUp')
+    res.render('signUserUp')
   } catch (err) {
     res.status(500).json(err);
   }
